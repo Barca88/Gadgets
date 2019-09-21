@@ -6,3 +6,4 @@ was created to use in a Arduino mega 2560.
 I used a diferent configuration on the pins insted 2 3 4 as the images i used 2 4 6.
 Search your LCD adress using i2c_scanner. 
 
+![Circuit](circuit.png)
