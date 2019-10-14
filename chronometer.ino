@@ -118,47 +118,32 @@ void readButtons(){
 void loop(){
   actual = millis();
   readButtons();
+  lcd.setCursor(0,0);
+  lcd.print("Via 1");
+  lcd.setCursor(8,0);
+  lcd.print("Via 2");
+  lcd.setCursor(0,1);
   switch(status){
 
     case 0:{
-      lcd.setCursor(0,0);
-      lcd.print("Via 1");
-      lcd.setCursor(8,0);
-      lcd.print("Via 2");
-      lcd.setCursor(0,1);
       lcd.print(TimeToString(v1Time-begin));
       lcd.setCursor(8,1);
       lcd.print(TimeToString(v2Time-begin));
       break;
     }
     case 1:{
-      lcd.setCursor(0,0);
-      lcd.print("Via 1");
-      lcd.setCursor(8,0);
-      lcd.print("Via 2");
-      lcd.setCursor(0,1);
       lcd.print(TimeToString(actual-begin));
       lcd.setCursor(8,1);
       lcd.print(TimeToString(actual-begin));
       break;
     }
     case 2:{
-      lcd.setCursor(0,0);
-      lcd.print("Via 1");
-      lcd.setCursor(8,0);
-      lcd.print("Via 2");
-      lcd.setCursor(0,1);
       lcd.print(TimeToString(v1Time-begin));
       lcd.setCursor(8,1);
       lcd.print(TimeToString(actual-begin));
       break;
     }
     case 3:{
-      lcd.setCursor(0,0);
-      lcd.print("Via 1");
-      lcd.setCursor(8,0);
-      lcd.print("Via 2");
-      lcd.setCursor(0,1);
       lcd.print(TimeToString(actual-begin));
       lcd.setCursor(8,1);
       lcd.print(TimeToString(v2Time-begin));
